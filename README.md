@@ -16,7 +16,7 @@ Le pilotage du vérin nécessite une alimentation électrique et un système de 
 
 ## 3. Caractéristiques techniques
 
-Les caractéristiques indiquées sur l'actionneur sont les suivantes :
+Les caractéristiques relevées sur l'actionneur TiMOTION TA16-5J-1 sont les suivantes :
 
 | Paramètre | Valeur |
 |---|---|
@@ -29,26 +29,37 @@ Les caractéristiques indiquées sur l'actionneur sont les suivantes :
 | Temps de repos indiqué | 18 minutes |
 | Charge indiquée (*Load*) | 2 000 N |
 | Courant maximal (*Current*) | 4,25 A |
+| Sortie minimale de la tige, vérin replié | 24 mm |
+| Sortie maximale de la tige | 164 mm |
+| Course utile de la tige | 140 mm |
 
 ### 3.1. Tension d'alimentation
 
 Le vérin fonctionne sous une tension d'alimentation de **24 V en courant continu (DC)**. L'alimentation et le système de commande doivent être compatibles avec cette tension.
 
-### 3.2. Facteur de marche
+### 3.2. Course de la tige
 
-Le facteur de marche est de **10 %**, avec un cycle de fonctionnement indiqué de 2 minutes en marche et 18 minutes à l'arrêt.
+La tige présente une sortie minimale de **24 mm** lorsque le vérin est en position repliée, et une sortie maximale de **164 mm** lorsqu'elle est complètement déployée.
 
-Cela signifie que le vérin peut fonctionner pendant une durée maximale indiquée de 2 minutes, suivie d'une période de repos de 18 minutes, conformément aux conditions spécifiées par le fabricant. Cette limitation doit être respectée afin d'éviter une surchauffe et une usure prématurée du mécanisme.
+La course utile correspond à la différence entre ces deux positions :
 
-### 3.3. Charge
+\[
+\text{Course utile} = 164 - 24 = 140\ \text{mm}
+\]
 
-La charge indiquée est de **2 000 N**. Cette valeur correspond à un effort d'environ 204 kgf en équivalent statique sous l'effet de la gravité terrestre.
+Le déplacement linéaire exploitable de la tige est donc de **140 mm**.
 
-Cette équivalence ne signifie pas que le vérin peut nécessairement soulever une masse de 204 kg dans toutes les conditions. La charge admissible dépend notamment du montage, du sens de l'effort et des conditions d'utilisation.
+### 3.3. Facteur de marche
 
-### 3.4. Courant électrique
+Le facteur de marche est de **10 %**, avec un cycle de fonctionnement indiqué de 2 minutes en marche et 18 minutes à l'arrêt. Cette limitation doit être respectée afin de prévenir une surchauffe et une usure prématurée de l'actionneur.
 
-Le courant maximal indiqué est de **4,25 A**. L'alimentation électrique et le dispositif de commande doivent être dimensionnés en tenant compte de cette valeur, ainsi que des éventuels appels de courant au démarrage.
+### 3.4. Charge
+
+La charge indiquée est de **2 000 N**. Cette valeur correspond à un effort équivalent au poids d'une masse d'environ 204 kg dans les conditions de la gravité terrestre. Cette équivalence ne constitue pas une garantie de capacité de levage : l'effort admissible dépend des conditions de montage et d'utilisation.
+
+### 3.5. Courant électrique
+
+Le courant maximal indiqué est de **4,25 A**. L'alimentation électrique et le dispositif de commande doivent être dimensionnés en tenant compte de cette valeur et des éventuels appels de courant au démarrage (la documentation officielle prévoit jusqu'au double de la valeur initiale lors du démarrage du moteur).
 
 ## 4. Intégration dans un système automatisé
 
