@@ -1,5 +1,3 @@
-# Documentatio_technique_verin_TiMOTION-TA16-5J-1
-
 # Vérin électrique TiMOTION TA16-5J-1
 
 ## 1. Présentation générale
