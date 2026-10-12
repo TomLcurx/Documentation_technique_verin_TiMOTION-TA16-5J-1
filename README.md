@@ -69,6 +69,47 @@ Le système de commande doit être compatible avec l'alimentation en 24 V DC et 
 
 Une attention particulière doit être portée à la fixation mécanique, à la prévention des surcharges et à la limitation des risques de coincement lors des déplacements.
 
+## 5. Connexions électriques et brochage
+
+Cette section décrit les connexions électriques du vérin TiMOTION TA16-5J-1 afin de faciliter son raccordement à un système de commande.
+
+### 5.1. Connecteur
+
+Le vérin est équipé d'un connecteur électrique permettant de relier l'actionneur à son alimentation et à son système de commande.
+
+Les informations suivantes doivent être relevées afin d'identifier précisément le connecteur :
+
+- Type et référence du connecteur ;
+- Nombre de broches ;
+- Disposition des broches ;
+- Correspondance entre les broches et les conducteurs électriques.
+
+### 5.2. Identification des fils
+
+Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
+
+| Couleur du fil | Fonction électrique |
+|---|---|
+| JAUNE | VDC +24 V (rétractation) |
+| VERT | VDC +24 V (rétractation) |
+| ROUGE | VCC +5 V |
+| NOIR | GND |
+| BLANC | Signal hall 1 |
+| BLEU | Signal hall 2 |
+
+*Remarque : le brochage et la fonction des fils doivent être confirmés à partir de la documentation constructeur ou par des vérifications électriques adaptées avant toute mise sous tension.*
+
+## 6. Objectif de cette documentation
+
+Cette documentation technique a été réalisée afin de centraliser les informations relatives au vérin électrique TiMOTION TA16-5J-1 et de faciliter son utilisation dans le cadre du projet.
+
+Auparavant, cet actionneur n'avait pas encore été utilisé dans le cadre du projet. Les informations concernant ses caractéristiques techniques, son fonctionnement et ses connexions électriques n'étaient donc pas toutes connues ou documentées.
+
+L'objectif de ce travail est ainsi d'identifier les caractéristiques du vérin, de clarifier son principe de fonctionnement et de déterminer les modalités de raccordement nécessaires à son intégration dans le système.
+
+Cette documentation constitue une base de référence pour les futures utilisations du vérin. Elle permet de conserver les informations collectées et de faciliter les opérations de montage, de raccordement, de mise en service et de maintenance.
+
+
 ## 5. Documentation constructeur
 
 Pour obtenir des informations complémentaires sur les dimensions, la course, la vitesse de déplacement et les possibilités de retour de position, il convient de consulter la documentation technique correspondant à la référence exacte du vérin.
