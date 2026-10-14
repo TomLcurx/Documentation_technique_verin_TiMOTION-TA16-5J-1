@@ -110,9 +110,9 @@ Les conducteurs électriques doivent être identifiés avant le raccordement. Po
 
 | Couleur du fil | Fonction électrique |
 |---|---|
-| JAUNE | VDC +24 V (extension) |
-| VERT | VDC +24 V (rétractation) |
-| ROUGE | VCC +5 V |
+| JAUNE | VDC +24V (extension) / ±0V (rétractation) |
+| VERT | VDC +24V (rétractation) / ±0V (extension) |
+| ROUGE | VCC +5V |
 | NOIR | GND |
 | BLANC | Signal hall 1 |
 | BLEU | Signal hall 2 |
