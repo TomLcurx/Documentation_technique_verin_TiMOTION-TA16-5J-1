@@ -1,4 +1,4 @@
-# Vérin électrique TiMOTION TA16-5J-1 (documentation réalisée par essais répertorié dans Rapport_de_tests.md)
+# Vérin électrique TiMOTION TA16-5J-1 (documentation réalisée par essais, répertoriés dans Rapport_de_tests.md)
 
 ## 1. Présentation générale
 
