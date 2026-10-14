@@ -27,8 +27,6 @@ Les caractéristiques relevées sur l'actionneur TiMOTION TA16-5J-1 sont les sui
 
 | Paramètre | Valeur |
 |---|---|
-| Fabricant | TiMOTION |
-| Référence | TA16-5J-1 |
 | Tension d'alimentation | 24 V DC |
 | Facteur de marche (*Duty cycle*) | 10 % |
 | Durée maximale de fonctionnement continu | 2 minutes |
