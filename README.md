@@ -25,7 +25,6 @@ Les caractéristiques relevées sur l'actionneur TiMOTION TA16-5J-1 sont les sui
 
 | Paramètre | Valeur |
 |---|---|
-| Type de composant | Actionneur linéaire électrique |
 | Fabricant | TiMOTION |
 | Référence | TA16-5J-1 |
 | Tension d'alimentation | 24 V DC |
@@ -53,6 +52,20 @@ La course utile correspond à la différence entre ces deux positions :
 \]
 
 Le déplacement linéaire exploitable de la tige est donc de **140 mm**.
+
+
+<img src="images/verin-min.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
+*Figure 2 — Vérin rétracté au maximum.*
+<br>
+
+</br>
+
+
+<img src="images/verin_max.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
+*Figure 3 — Vérin déplié au maximum.*
+<br>
+
+</br>
 
 ### 3.3. Facteur de marche
 
