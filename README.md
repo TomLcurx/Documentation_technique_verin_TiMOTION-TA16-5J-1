@@ -47,7 +47,7 @@ La tige présente une sortie minimale de **24 mm** lorsque le vérin est en posi
 
 La course utile correspond à la différence entre ces deux positions :
 
-Course utile = 164 mm - 24 mm = 140 mm
+***Course utile = 164 mm - 24 mm = 140 mm***
 
 Le déplacement linéaire exploitable de la tige est donc de **140 mm**.
 
@@ -57,7 +57,6 @@ Le déplacement linéaire exploitable de la tige est donc de **140 mm**.
 <br>
 
 </br>
-
 
 <img src="images/verin_max.jpg" alt="Vérin TiMOTION déplié TA16-5J-1" width="400">
 *Figure 3 — Vérin déplié au maximum.*
@@ -90,24 +89,35 @@ Ce dernier est un connecteur Molex Mini Fit Jr de 8 pins.
 <img src="images/connecteur.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
 *Figure 4 — Connecteur du vérin TiMOTION TA16-5J-1.*
 
-### 4.2. Identification des fils
-
-Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
-
-<img src="images/cables.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
-*Figure 5 — Fils de commande du vérin TiMOTION TA16-5J-1.*
 <br>
 
 </br>
 
-| Couleur du fil | Fonction électrique |
-|---|---|
-| JAUNE | VDC +24V (extension) / ±0V (rétractation) |
-| VERT | VDC +24V (rétractation) / ±0V (extension) |
-| ROUGE | VCC +5V |
-| NOIR | GND |
-| BLANC | Signal hall 1 |
-| BLEU | Signal hall 2 |
+Les pins se lisent de la manière suivante :
+
+<img src="images/connecteur.jpg" alt="Connecteur du TiMOTION TA16-5J-1" width="400">
+*Figure 5 — Connecteur du vérin TiMOTION TA16-5J-1.*
+
+### 4.2. Identification des fils
+
+Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
+
+<img src="images/positon_connecteur.jpg" alt="Lecture des pins du connecteur" width="400">
+*Figure 6 — Fils de commande du vérin TiMOTION TA16-5J-1.*
+<br>
+
+</br>
+
+| Couleur du fil | Fonction électrique | Position sur le connecteur |
+|---|---|---|
+| JAUNE | VDC +24V (extension) / ±0V (rétractation) | 8 |
+| VERT | VDC +24V (rétractation) / ±0V (extension) | 1 |
+| ROUGE | VCC +5V | 3 |
+| NOIR | GND | 7 |
+| BLANC | Signal hall 1 | 4 |
+| BLEU | Signal hall 2 | 5 |
+
+*Les pins 2 et 6 ne sont pas utilisés*
 
 ## 4.3. Fonctionnement des capteurs à effet Hall
 
