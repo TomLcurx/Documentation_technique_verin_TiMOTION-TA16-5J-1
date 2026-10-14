@@ -7,6 +7,8 @@ Le **TiMOTION TA16-5J-1** est un actionneur linéaire électrique permettant de 
 <img src="images/verin.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
 *Figure 1 — Vue générale du vérin électrique TiMOTION TA16-5J-1.*
 <br>
+
+</br>
 Cet actionneur peut être intégré dans différents systèmes automatisés nécessitant un déplacement linéaire motorisé. Son intégration dépend notamment des contraintes mécaniques, électriques et environnementales de l'application.
 
 ## 2. Principe de fonctionnement
