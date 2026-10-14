@@ -5,10 +5,13 @@
 Le **TiMOTION TA16-5J-1** est un actionneur linéaire électrique permettant de convertir l'énergie électrique en un mouvement mécanique de translation. Il est utilisé pour réaliser des mouvements de poussée et de traction afin de déplacer, lever ou positionner un élément mécanique.
 
 <img src="images/verin.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
+
 *Figure 1 — Vue générale du vérin électrique TiMOTION TA16-5J-1.*
+
 <br>
 
 </br>
+
 Cet actionneur peut être intégré dans différents systèmes automatisés nécessitant un déplacement linéaire motorisé. Son intégration dépend notamment des contraintes mécaniques, électriques et environnementales de l'application.
 
 ## 2. Principe de fonctionnement
@@ -53,14 +56,18 @@ Le déplacement linéaire exploitable de la tige est donc de **140 mm**.
 
 
 <img src="images/verin_min.jpg" alt="Vérin TiMOTION rétracté TA16-5J-1" width="400">
+
 *Figure 2 — Vérin rétracté au maximum.*
+
 <br>
 
 </br>
 
 
 <img src="images/verin_max.jpg" alt="Vérin TiMOTION déplié TA16-5J-1" width="400">
+
 *Figure 3 — Vérin déplié au maximum.*
+
 <br>
 
 </br>
@@ -76,6 +83,18 @@ La charge indiquée est de **2 000 N**. Cette valeur correspond à un effort éq
 ### 3.5. Courant électrique
 
 Le courant maximal indiqué est de **4,25 A**. L'alimentation électrique et le dispositif de commande doivent être dimensionnés en tenant compte de cette valeur et des éventuels appels de courant au démarrage (la documentation officielle prévoit jusqu'au double de la valeur initiale lors du démarrage du moteur).
+
+### 3.6. Vitesse de déplacement
+
+La vitesse de déplacement du vérin dépend notamment de la charge appliquée, de la tension d'alimentation et de la configuration de l'actionneur.
+
+Elle peut être mesurée expérimentalement en relevant le temps nécessaire pour parcourir une distance connue. La vitesse moyenne est alors calculée avec la formule suivante :
+
+**Vitesse moyenne = distance parcourue / durée du déplacement**
+
+Avec une distance exprimée en millimètres et une durée exprimée en secondes, la vitesse obtenue est exprimée en mm/s.
+
+La vitesse réelle de ce vérin pourra ainsi être déterminée lors des essais et les résultats pourront être consignés dans le fichier `Rapport_de_tests.md`.
 
 ## 4. Intégration dans un système automatisé
 
@@ -96,6 +115,7 @@ Le vérin est équipé d'un connecteur électrique permettant de relier l'action
 Ce dernier est un connecteur Molex Mini Fit Jr de 8 pins.
 
 <img src="images/connecteur.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
+
 *Figure 4 — Connecteur du vérin TiMOTION TA16-5J-1.*
 
 ### 5.2. Identification des fils
@@ -103,7 +123,9 @@ Ce dernier est un connecteur Molex Mini Fit Jr de 8 pins.
 Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
 
 <img src="images/cables.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
+
 *Figure 5 — Fils de commande du vérin TiMOTION TA16-5J-1.*
+
 <br>
 
 </br>
@@ -119,6 +141,36 @@ Les conducteurs électriques doivent être identifiés avant le raccordement. Po
 
 *Remarque : le brochage et la fonction des fils doivent être confirmés à partir de la documentation constructeur ou par des vérifications électriques adaptées avant toute mise sous tension.*
 
+D'après la fiche technique de la série TA16, pour les configurations équipées de capteurs Hall, le constructeur indique les fonctions suivantes :
+
+| Couleur du fil | Fonction indiquée dans la fiche technique |
+|---|---|
+| VERT | EXT+ : commande d'extension |
+| JAUNE | RET+ : commande de rétractation |
+| ROUGE | VCC+ : alimentation des capteurs Hall |
+| NOIR | Hall-GND : masse des capteurs Hall |
+| BLANC | S1 : signal du capteur Hall 1 |
+| BLEU | S2 : signal du capteur Hall 2 |
+
+Les fonctions indiquées par le constructeur pour les fils jaune et vert diffèrent de celles relevées dans le tableau précédent. Cette différence doit être vérifiée pour la configuration exacte du vérin utilisé. Les résultats expérimentaux doivent être conservés dans le rapport de tests et ne doivent pas être remplacés par les indications générales du constructeur sans vérification.
+
+### 5.3. Fonctionnement des capteurs Hall
+
+Les capteurs Hall permettent de détecter les variations d'un champ magnétique et de produire des signaux électriques. Dans un vérin équipé de ces capteurs, les signaux permettent de suivre le mouvement du mécanisme.
+
+Les deux signaux, S1 et S2, peuvent notamment être utilisés pour :
+
+- compter les impulsions générées pendant le déplacement ;
+- estimer le déplacement de la tige après calibration ;
+- suivre le mouvement du vérin ;
+- déterminer le sens de déplacement si le déphasage entre les deux signaux le permet.
+
+Pour exploiter ces informations, il faut établir expérimentalement la correspondance entre le nombre d'impulsions et le déplacement réel de la tige.
+
+Les capteurs Hall ne fournissent pas nécessairement une position absolue au démarrage. Une référence initiale peut donc être nécessaire pour connaître la position de la tige.
+
+La fiche technique de la série TA16 indique des capteurs Hall de type NPN avec une plage de tension spécifiée de 5 à 36 V pour les configurations concernées. Avant le raccordement à une carte de commande, il faut vérifier la tension admissible par ses entrées, le type de sortie des capteurs et la nécessité éventuelle de résistances de rappel.
+
 ## 6. Objectif de cette documentation
 
 Cette documentation technique a été réalisée afin de centraliser les informations relatives au vérin électrique TiMOTION TA16-5J-1 et de faciliter son utilisation dans le cadre du projet.
@@ -129,11 +181,10 @@ L'objectif de ce travail est ainsi d'identifier les caractéristiques du vérin,
 
 Cette documentation constitue une base de référence pour les futures utilisations du vérin. Elle permet de conserver les informations collectées et de faciliter les opérations de montage, de raccordement, de mise en service et de maintenance.
 
-
 ## 7. Documentation constructeur
 
 Pour obtenir des informations complémentaires sur les dimensions, la course, la vitesse de déplacement et les possibilités de retour de position, il convient de consulter la documentation technique correspondant à la référence exacte du vérin.
 
-[Consulter le documentation officielle de TiMOTION]((https://www.timotion.com/_upload/files/DataSheet_TA16-V_EN.pdf))
+[Consulter la documentation officielle de TiMOTION](https://www.timotion.com/_upload/files/DataSheet_TA16-V_EN.pdf)
 
 *Remarque : les caractéristiques présentées ci-dessus reprennent les indications relevées sur l'actionneur. Les paramètres non indiqués, notamment la course, la vitesse et le type de retour de position, restent à confirmer à partir de la documentation constructeur.*
