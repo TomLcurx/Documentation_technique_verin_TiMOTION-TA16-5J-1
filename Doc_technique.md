@@ -114,6 +114,6 @@ Cette documentation constitue une base de référence pour les futures utilisati
 
 Pour obtenir des informations complémentaires sur les dimensions, la course, la vitesse de déplacement et les possibilités de retour de position, il convient de consulter la documentation technique correspondant à la référence exacte du vérin.
 
-[Consulter le site officiel de TiMOTION]([https://www.timotion.com/](https://www.timotion.com/_upload/files/DataSheet_TA16-V_EN.pdf))
+[Consulter le documentation officielle de TiMOTION]((https://www.timotion.com/_upload/files/DataSheet_TA16-V_EN.pdf))
 
 *Remarque : les caractéristiques présentées ci-dessus reprennent les indications relevées sur l'actionneur. Les paramètres non indiqués, notamment la course, la vitesse et le type de retour de position, restent à confirmer à partir de la documentation constructeur.*
