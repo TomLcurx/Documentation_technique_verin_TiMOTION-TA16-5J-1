@@ -102,7 +102,7 @@ Les pins se lisent de la manière suivante :
 
 Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
 
-<img src="images/positon_connecteur.jpg" alt="Lecture des pins du connecteur" width="400">
+<img src="images/position_connecteur.jpg" alt="Lecture des pins du connecteur" width="400">
 *Figure 6 — Fils de commande du vérin TiMOTION TA16-5J-1.*
 <br>
 
