@@ -4,7 +4,7 @@
 
 Le **TiMOTION TA16-5J-1** est un actionneur linéaire électrique permettant de convertir l'énergie électrique en un mouvement mécanique de translation. Il est utilisé pour réaliser des mouvements de poussée et de traction afin de déplacer, lever ou positionner un élément mécanique.
 
-![Vue générale du vérin TiMOTION TA16-5J-1](images/verin.jpg)
+<img src="images/verin.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
 *Figure 1 — Vue générale du vérin électrique TiMOTION TA16-5J-1.*
 
 Cet actionneur peut être intégré dans différents systèmes automatisés nécessitant un déplacement linéaire motorisé. Son intégration dépend notamment des contraintes mécaniques, électriques et environnementales de l'application.
