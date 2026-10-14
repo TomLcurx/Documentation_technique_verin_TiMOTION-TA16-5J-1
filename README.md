@@ -95,14 +95,14 @@ Ce dernier est un connecteur Molex Mini Fit Jr de 8 pins.
 
 Les pins se lisent de la manière suivante :
 
-<img src="images/connecteur.jpg" alt="Connecteur du TiMOTION TA16-5J-1" width="400">
-*Figure 5 — Connecteur du vérin TiMOTION TA16-5J-1.*
+<img src="images/position_connecteur.jpg" alt="Lecture des pins du connecteur" width="400">
+*Figure 5 — Lecture des pins du connecteur.*
 
 ### 4.2. Identification des fils
 
 Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
 
-<img src="images/position_connecteur.jpg" alt="Lecture des pins du connecteur" width="400">
+<img src="images/cables.jpg" alt="Câbles du connecteur" width="400">
 *Figure 6 — Fils de commande du vérin TiMOTION TA16-5J-1.*
 <br>
 
