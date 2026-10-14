@@ -120,11 +120,9 @@ Les deux signaux, S1 et S2, peuvent notamment être utilisés pour :
 - suivre le mouvement du vérin ;
 - déterminer le sens de déplacement si le déphasage entre les deux signaux le permet.
 
-Pour exploiter ces informations, il faut établir expérimentalement la correspondance entre le nombre d'impulsions et le déplacement réel de la tige.
-
 Les capteurs Hall ne fournissent pas nécessairement une position absolue au démarrage. Une référence initiale peut donc être nécessaire pour connaître la position de la tige.
 
-La fiche technique de la série TA16 indique des capteurs Hall de type NPN avec une plage de tension spécifiée de 5 à 36 V pour les configurations concernées. Avant le raccordement à une carte de commande, il faut vérifier la tension admissible par ses entrées, le type de sortie des capteurs et la nécessité éventuelle de résistances de rappel.
+La fiche technique officielle de la série TA16 indique des capteurs Hall de type NPN avec une plage de tension spécifiée de +5V à +36V et pour le TA16-5J-1, la tension prévue est de +5V.
 
 ### 5. Objectif de cette documentation
 
