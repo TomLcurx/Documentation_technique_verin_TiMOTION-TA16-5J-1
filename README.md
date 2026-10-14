@@ -47,14 +47,12 @@ La tige présente une sortie minimale de **24 mm** lorsque le vérin est en posi
 
 La course utile correspond à la différence entre ces deux positions :
 
-\[
-\text{Course utile} = 164 - 24 = 140\ \text{mm}
-\]
+Course utile = 164 mm - 24 mm = 140 mm
 
 Le déplacement linéaire exploitable de la tige est donc de **140 mm**.
 
 
-<img src="images/verin-min.jpg" alt="Vérin TiMOTION rétracté TA16-5J-1" width="400">
+<img src="images/verin_min.jpg" alt="Vérin TiMOTION rétracté TA16-5J-1" width="400">
 *Figure 2 — Vérin rétracté au maximum.*
 <br>
 
