@@ -1,4 +1,4 @@
-# Vérin électrique TiMOTION TA16-5J-1
+# Vérin électrique TiMOTION TA16-5J-1 (documentation réalisée par essais répertorié dans Rapport_de_tests.md)
 
 ## 1. Présentation générale
 
@@ -90,7 +90,7 @@ Les conducteurs électriques doivent être identifiés avant le raccordement. Po
 
 | Couleur du fil | Fonction électrique |
 |---|---|
-| JAUNE | VDC +24 V (rétractation) |
+| JAUNE | VDC +24 V (extension) |
 | VERT | VDC +24 V (rétractation) |
 | ROUGE | VCC +5 V |
 | NOIR | GND |
@@ -110,7 +110,7 @@ L'objectif de ce travail est ainsi d'identifier les caractéristiques du vérin,
 Cette documentation constitue une base de référence pour les futures utilisations du vérin. Elle permet de conserver les informations collectées et de faciliter les opérations de montage, de raccordement, de mise en service et de maintenance.
 
 
-## 5. Documentation constructeur
+## 7. Documentation constructeur
 
 Pour obtenir des informations complémentaires sur les dimensions, la course, la vitesse de déplacement et les possibilités de retour de position, il convient de consulter la documentation technique correspondant à la référence exacte du vérin.
 
