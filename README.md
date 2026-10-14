@@ -7,6 +7,7 @@
 Le **TiMOTION TA16-5J-1** est un actionneur linéaire électrique permettant de convertir l'énergie électrique en un mouvement mécanique de translation. Il est utilisé pour réaliser des mouvements de poussée et de traction afin de déplacer, lever ou positionner un élément mécanique.
 
 <img src="images/verin.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
+
 *Figure 1 — Vue générale du vérin électrique TiMOTION TA16-5J-1.*
 <br>
 
@@ -53,12 +54,14 @@ Le déplacement linéaire exploitable de la tige est donc de **140 mm**.
 
 
 <img src="images/verin_min.jpg" alt="Vérin TiMOTION rétracté TA16-5J-1" width="400">
+
 *Figure 2 — Vérin rétracté au maximum.*
 <br>
 
 </br>
 
 <img src="images/verin_max.jpg" alt="Vérin TiMOTION déplié TA16-5J-1" width="400">
+
 *Figure 3 — Vérin déplié au maximum.*
 <br>
 
@@ -87,6 +90,7 @@ Le vérin est équipé d'un connecteur électrique permettant de relier l'action
 Ce dernier est un connecteur Molex Mini Fit Jr de 8 pins.
 
 <img src="images/connecteur.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
+
 *Figure 4 — Connecteur du vérin TiMOTION TA16-5J-1.*
 
 <br>
@@ -96,6 +100,7 @@ Ce dernier est un connecteur Molex Mini Fit Jr de 8 pins.
 Les pins se lisent de la manière suivante :
 
 <img src="images/position_connecteur.jpg" alt="Lecture des pins du connecteur" width="400">
+
 *Figure 5 — Lecture des pins du connecteur.*
 
 ### 4.2. Identification des fils
@@ -103,6 +108,7 @@ Les pins se lisent de la manière suivante :
 Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
 
 <img src="images/cables.jpg" alt="Câbles du connecteur" width="400">
+
 *Figure 6 — Fils de commande du vérin TiMOTION TA16-5J-1.*
 <br>
 
