@@ -77,19 +77,11 @@ La charge indiquée est de **2 000 N**. Cette valeur correspond à un effort éq
 
 Le courant maximal indiqué est de **4,25 A**. L'alimentation électrique et le dispositif de commande doivent être dimensionnés en tenant compte de cette valeur et des éventuels appels de courant au démarrage (la documentation officielle prévoit jusqu'au double de la valeur initiale lors du démarrage du moteur).
 
-## 4. Intégration dans un système automatisé
-
-L'intégration du vérin TiMOTION TA16-5J-1 nécessite de prendre en compte les efforts appliqués, la course utile, la vitesse souhaitée et les conditions de fonctionnement.
-
-Le système de commande doit être compatible avec l'alimentation en 24 V DC et capable de gérer le courant nécessaire au fonctionnement de l'actionneur. Il convient également de prévoir une protection électrique adaptée et de respecter le facteur de marche spécifié.
-
-Une attention particulière doit être portée à la fixation mécanique, à la prévention des surcharges et à la limitation des risques de coincement lors des déplacements.
-
-## 5. Connexions électriques et brochage
+## 4. Connexions électriques et brochage
 
 Cette section décrit les connexions électriques du vérin TiMOTION TA16-5J-1 afin de faciliter son raccordement à un système de commande.
 
-### 5.1. Connecteur
+### 4.1. Connecteur
 
 Le vérin est équipé d'un connecteur électrique permettant de relier l'actionneur à son alimentation et à son système de commande.
 
@@ -98,7 +90,7 @@ Ce dernier est un connecteur Molex Mini Fit Jr de 8 pins.
 <img src="images/connecteur.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
 *Figure 4 — Connecteur du vérin TiMOTION TA16-5J-1.*
 
-### 5.2. Identification des fils
+### 4.2. Identification des fils
 
 Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
 
@@ -117,9 +109,24 @@ Les conducteurs électriques doivent être identifiés avant le raccordement. Po
 | BLANC | Signal hall 1 |
 | BLEU | Signal hall 2 |
 
-*Remarque : le brochage et la fonction des fils doivent être confirmés à partir de la documentation constructeur ou par des vérifications électriques adaptées avant toute mise sous tension.*
+## 4.3. Fonctionnement des capteurs à effet Hall
 
-## 6. Objectif de cette documentation
+Les capteurs Hall permettent de détecter les variations d'un champ magnétique et de produire des signaux électriques. Dans un vérin équipé de ces capteurs, les signaux permettent de suivre le mouvement du mécanisme.
+
+Les deux signaux, S1 et S2, peuvent notamment être utilisés pour :
+
+- compter les impulsions générées pendant le déplacement ;
+- estimer le déplacement de la tige après calibration ;
+- suivre le mouvement du vérin ;
+- déterminer le sens de déplacement si le déphasage entre les deux signaux le permet.
+
+Pour exploiter ces informations, il faut établir expérimentalement la correspondance entre le nombre d'impulsions et le déplacement réel de la tige.
+
+Les capteurs Hall ne fournissent pas nécessairement une position absolue au démarrage. Une référence initiale peut donc être nécessaire pour connaître la position de la tige.
+
+La fiche technique de la série TA16 indique des capteurs Hall de type NPN avec une plage de tension spécifiée de 5 à 36 V pour les configurations concernées. Avant le raccordement à une carte de commande, il faut vérifier la tension admissible par ses entrées, le type de sortie des capteurs et la nécessité éventuelle de résistances de rappel.
+
+### 5. Objectif de cette documentation
 
 Cette documentation technique a été réalisée afin de centraliser les informations relatives au vérin électrique TiMOTION TA16-5J-1 et de faciliter son utilisation dans le cadre du projet.
 
@@ -130,7 +137,7 @@ L'objectif de ce travail est ainsi d'identifier les caractéristiques du vérin,
 Cette documentation constitue une base de référence pour les futures utilisations du vérin. Elle permet de conserver les informations collectées et de faciliter les opérations de montage, de raccordement, de mise en service et de maintenance.
 
 
-## 7. Documentation constructeur
+### 6. Documentation constructeur
 
 Pour obtenir des informations complémentaires sur les dimensions, la course, la vitesse de déplacement et les possibilités de retour de position, il convient de consulter la documentation technique correspondant à la référence exacte du vérin.
 
