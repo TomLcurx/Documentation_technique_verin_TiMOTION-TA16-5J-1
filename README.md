@@ -93,16 +93,20 @@ Cette section décrit les connexions électriques du vérin TiMOTION TA16-5J-1 a
 
 Le vérin est équipé d'un connecteur électrique permettant de relier l'actionneur à son alimentation et à son système de commande.
 
-Les informations suivantes doivent être relevées afin d'identifier précisément le connecteur :
+Ce dernier est un connecteur Molex Mini Fit Jr de 8 pins.
 
-- Type et référence du connecteur ;
-- Nombre de broches ;
-- Disposition des broches ;
-- Correspondance entre les broches et les conducteurs électriques.
+<img src="images/connecteur.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
+*Figure 4 — Connecteur du vérin TiMOTION TA16-5J-1.*
 
 ### 5.2. Identification des fils
 
 Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
+
+<img src="images/cables.jpg" alt="Vérin TiMOTION TA16-5J-1" width="400">
+*Figure 5 — Fils de commande du vérin TiMOTION TA16-5J-1.*
+<br>
+
+</br>
 
 | Couleur du fil | Fonction électrique |
 |---|---|
