@@ -69,6 +69,16 @@ Ces observations ont montré un comportement électrique anormal du vérin. Les 
 
 **Remarque :** les observations réalisées ne permettent pas, à elles seules, d'identifier précisément l'origine du défaut électrique.
 
+### 5.3. Mesure de la résistance des bornes du moteur
+
+Une mesure de résistance a été réalisée à l'aide d'un multimètre entre les bornes du moteur du vérin, afin de vérifier la continuité électrique de l'enroulement.
+
+Au lieu d'obtenir une valeur de résistance exprimée en ohms, le multimètre a affiché **OL** (*Over Limit* ou dépassement de plage, selon l'appareil).
+
+Cette indication correspond généralement à une résistance trop élevée pour la plage de mesure sélectionnée ou à un circuit ouvert. Dans le cas présent, ce résultat est inhabituel pour une mesure réalisée directement aux bornes d'un moteur électrique et constitue un indice supplémentaire d'un éventuel défaut électrique.
+
+Cependant, cette mesure ne permet pas à elle seule de conclure définitivement à une panne du moteur. Le résultat peut notamment dépendre des points de mesure, de la configuration du câblage et de la plage utilisée sur le multimètre.
+
 ## 6. Essais sur les capteurs à effet Hall
 
 ### 6.1. Alimentation des capteurs
