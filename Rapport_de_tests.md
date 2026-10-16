@@ -6,7 +6,7 @@ Des essais ont été réalisés sur le vérin électrique TiMOTION TA16-5J-1 afi
 
 Ces manipulations avaient également pour objectif de recueillir les informations nécessaires à la réalisation de la documentation technique du vérin.
 
-Les essais ont porté sur l'identification du connecteur et des câbles, l'alimentation du moteur, les capteurs à effet Hall et l'inspection interne du vérin.
+Les essais ont porté sur l'identification du connecteur et des câbles, l'alimentation du moteur, les capteurs à effet Hall et l'inspection interne du vérin. À la suite des résultats obtenus, un second vérin a également été testé afin de comparer son fonctionnement avec celui du premier exemplaire.
 
 ## 2. Matériel utilisé
 
@@ -19,7 +19,7 @@ Les essais ont été réalisés à l'aide du matériel suivant :
 - **Multimètre** : utilisé pour identifier les conducteurs et effectuer les vérifications électriques.
 - **Oscilloscope** : utilisé lors des tentatives d'observation des signaux des capteurs à effet Hall.
 
-La prise d'origine du vérin a été coupée afin d'accéder aux conducteurs électriques et de faciliter leur identification et leur raccordement au matériel de test.
+La prise d'origine du premier vérin a été coupée afin d'accéder aux conducteurs électriques et de faciliter leur identification et leur raccordement au matériel de test.
 
 ## 3. Préparation du câblage expérimental
 
@@ -47,7 +47,7 @@ Les différents fils ont été repérés afin de distinguer ceux associés à l'
 
 Les fonctions supposées des conducteurs ont ensuite été utilisées pour réaliser les premiers essais d'alimentation.
 
-Les couleurs des fils, leur emplacement et les fonctions retenues sont présentés dans le fichier de documentation technique `README.md`.
+Les couleurs des fils, leur emplacement et les fonctions retenues sont présentés dans le fichier de documentation technique `verin-timotion.md`.
 
 ## 5. Essais d'alimentation du moteur
 
@@ -99,7 +99,9 @@ L'objectif était de vérifier la présence éventuelle d'impulsions électrique
 
 Cependant, les essais n'ont pas permis d'obtenir de signaux exploitables. Il n'a donc pas été possible de confirmer le fonctionnement des capteurs Hall ni de déterminer si leur état avait un lien avec le défaut constaté.
 
-## 7. Inspection interne du vérin
+## 7. Inspection interne et remplacement du vérin
+
+### 7.1. Inspection interne du premier vérin
 
 Afin de rechercher une éventuelle anomalie mécanique ou électrique, le moteur et l'intérieur du vérin ont été ouverts pour examiner les câbles et l'installation interne.
 
@@ -107,29 +109,42 @@ Cette inspection n'a pas permis d'identifier de défaut évident ni de relever d
 
 L'origine de la panne n'a donc pas pu être déterminée par cette seule observation.
 
+### 7.2. Essais sur le vérin de remplacement
+
+À la suite des différents essais réalisés, le comportement du premier vérin restait difficile à comprendre. Malgré les tentatives d'alimentation en 24 V DC, les vérifications des capteurs à effet Hall et l'inspection interne, aucun fonctionnement normal n'avait pu être obtenu.
+
+Le premier vérin a donc été remplacé par un second exemplaire afin de poursuivre les travaux.
+
+Une alimentation de 24 V DC a alors été appliquée aux connexions du moteur du nouveau vérin. Contrairement au premier exemplaire, ce vérin a fonctionné et sa tige a pu se déplacer avec uniquement l'alimentation de 24 V DC, sans alimentation externe de 5 V DC appliquée aux capteurs à effet Hall.
+
+Cet essai a permis de constater que l'application d'une alimentation externe de 5 V DC aux capteurs Hall n'était pas nécessaire pour obtenir le mouvement du moteur dans les conditions du test. Il faut toutefois distinguer le fonctionnement du moteur de celui des capteurs, qui peuvent servir à fournir un retour d'information sur le déplacement.
+
+La comparaison des deux exemplaires a conduit à conclure que le premier vérin était très probablement défectueux. La cause exacte de cette défaillance n'a cependant pas pu être déterminée.
+
 ## 8. Bilan des essais
 
-Les essais réalisés ont permis de recueillir plusieurs informations sur le vérin, mais n'ont pas permis de rétablir son fonctionnement.
+Les essais réalisés ont permis d'identifier les conducteurs, d'étudier le comportement électrique du premier vérin et de comparer son fonctionnement avec celui d'un second exemplaire.
 
 | Essai réalisé | Observation | Conclusion |
 |---|---|---|
 | Identification des câbles au multimètre | Repérage des couleurs et de leur emplacement dans le connecteur | Informations utilisées pour la documentation technique |
-| Alimentation en 24 V DC | Légère rétraction de la tige | Mouvement observé, fonctionnement normal non confirmé |
-| Inversion de la polarité | Aucun mouvement et courant indiqué de 0 A | Fonctionnement anormal |
+| Alimentation du premier vérin en 24 V DC | Légère rétraction de la tige | Mouvement observé, fonctionnement normal non confirmé |
+| Inversion de la polarité du premier vérin | Aucun mouvement et courant indiqué de 0 A | Fonctionnement anormal |
 | Rétablissement du branchement initial | Mise en situation de court-circuit de l'alimentation | Défaut électrique suspecté |
-| Alimentation des capteurs Hall en 5 V DC | Aucun rétablissement du fonctionnement | Hypothèse non confirmée |
-| Observation à l'oscilloscope | Aucun signal exploitable obtenu | Fonctionnement des capteurs non vérifié |
-| Inspection interne | Aucun défaut évident identifié | Origine de la panne non déterminée |
+| Mesure de la résistance aux bornes du moteur du premier vérin | Affichage `OL` sur le multimètre | Résultat compatible avec un circuit ouvert ou une résistance hors plage |
+| Alimentation des capteurs Hall en 5 V DC | Aucun rétablissement du fonctionnement du premier vérin | Hypothèse non confirmée |
+| Observation des signaux Hall à l'oscilloscope | Aucun signal exploitable obtenu | Fonctionnement des capteurs non vérifié |
+| Inspection interne du premier vérin | Aucun défaut évident identifié | Origine de la panne non déterminée |
+| Alimentation du second vérin en 24 V DC | Déplacement de la tige sans alimentation externe de 5 V DC appliquée aux capteurs Hall | Fonctionnement du moteur confirmé dans les conditions de l'essai |
 
-## 9. Conclusion et remplacement du vérin
+## 9. Conclusion
 
-Les différentes manipulations n'ont pas permis de faire fonctionner normalement le vérin testé. Malgré les essais d'alimentation, les vérifications des capteurs à effet Hall et l'inspection interne, l'origine exacte du dysfonctionnement n'a pas pu être identifiée.
+Les essais réalisés ont permis de recueillir des informations sur les connexions électriques du vérin TiMOTION TA16-5J-1 et d'étudier plusieurs hypothèses pouvant expliquer le dysfonctionnement du premier exemplaire.
 
-Le comportement électrique observé, notamment la mise en situation de court-circuit de l'alimentation, ainsi que l'impossibilité d'obtenir un déplacement normal, ont conduit à considérer le vérin comme hors service pour les besoins du projet.
+Les premières manipulations ont mis en évidence un comportement électrique anormal : mouvement limité de la tige, absence de déplacement lors de l'inversion de polarité, mise en situation de court-circuit de l'alimentation et affichage `OL` lors de la mesure de résistance aux bornes du moteur. Les essais sur les capteurs à effet Hall et l'inspection interne n'ont pas permis d'identifier précisément l'origine du problème.
 
-Il a donc été remplacé par un autre vérin afin de poursuivre les travaux.
+Le remplacement du premier vérin par un second exemplaire a permis de poursuivre les essais et d'obtenir un déplacement de la tige avec uniquement une alimentation de 24 V DC sur le moteur, sans alimentation externe de 5 V DC appliquée aux capteurs Hall.
 
-Les essais ont néanmoins permis d'identifier les connexions visibles, de relever certaines caractéristiques pratiques et de documenter les manipulations réalisées. Ces informations ont servi de base à la rédaction du fichier `verin-timotion.md`.
+La comparaison des résultats a conduit à considérer le premier vérin comme défectueux. Toutefois, la cause exacte de sa panne n'a pas pu être déterminée.
 
-Il convient toutefois de distinguer les caractéristiques relevées sur le vérin initial des résultats qui devront éventuellement être confirmés sur le vérin de remplacement.
-
+Enfin, les observations recueillies au cours de ces manipulations ont servi de base à la rédaction de la documentation technique `verin-timotion.md`. Les résultats spécifiques au premier vérin doivent être distingués des caractéristiques qui pourront être confirmées sur le vérin de remplacement.
