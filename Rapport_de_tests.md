@@ -47,7 +47,7 @@ Les différents fils ont été repérés afin de distinguer ceux associés à l'
 
 Les fonctions supposées des conducteurs ont ensuite été utilisées pour réaliser les premiers essais d'alimentation.
 
-Les couleurs des fils, leur emplacement et les fonctions retenues sont présentés dans le fichier de documentation technique `verin-timotion.md`.
+Les couleurs des fils, leur emplacement et les fonctions retenues sont présentés dans le fichier de documentation technique `README.md`.
 
 ## 5. Essais d'alimentation du moteur
 
