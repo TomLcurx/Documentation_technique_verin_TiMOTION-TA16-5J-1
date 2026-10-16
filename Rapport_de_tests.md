@@ -18,7 +18,6 @@ Les essais ont été réalisés à l'aide du matériel suivant :
 - **Bornier à vis 6 pôles** : utilisé pour raccorder et maintenir les conducteurs électriques grâce à des vis de serrage.
 - **Multimètre** : utilisé pour identifier les conducteurs et effectuer les vérifications électriques.
 - **Oscilloscope** : utilisé lors des tentatives d'observation des signaux des capteurs à effet Hall.
-- **Fil utilisé comme sonde de contact** : utilisé pour tenter d'accéder aux signaux des capteurs Hall lors des mesures à l'oscilloscope.
 
 La prise d'origine du vérin a été coupée afin d'accéder aux conducteurs électriques et de faciliter leur identification et leur raccordement au matériel de test.
 
