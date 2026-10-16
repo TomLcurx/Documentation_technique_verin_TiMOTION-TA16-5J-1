@@ -105,7 +105,7 @@ Les pins se lisent de la manière suivante :
 
 ### 4.2. Identification des fils
 
-Les conducteurs électriques doivent être identifiés avant le raccordement. Pour chaque fil, il convient de préciser sa couleur, sa fonction et sa connexion au système de commande.
+Le vérin est connecté grâce à 6 fils, différentiables par leur couleur et le diamètre.
 
 <img src="images/cables.jpg" alt="Câbles du connecteur" width="400">
 
@@ -142,14 +142,11 @@ La fiche technique officielle de la série TA16 indique des capteurs Hall de typ
 
 ### 5. Objectif de cette documentation
 
-Cette documentation technique a été réalisée afin de centraliser les informations relatives au vérin électrique TiMOTION TA16-5J-1 et de faciliter son utilisation dans le cadre du projet.
+Cette documentation technique a été réalisée afin de centraliser les informations relatives au vérin électrique TiMOTION TA16-5J-1 et de faciliter son utilisation dans le cadre d'un projet.
 
-Auparavant, cet actionneur n'avait pas encore été utilisé dans le cadre du projet. Les informations concernant ses caractéristiques techniques, son fonctionnement et ses connexions électriques n'étaient donc pas toutes connues ou documentées.
+Auparavant, cet actionneur n'avait pas encore été utilisé. Les informations concernant ses caractéristiques techniques, son fonctionnement et ses connexions électriques n'étaient donc pas toutes connues ou documentées.
 
 L'objectif de ce travail est ainsi d'identifier les caractéristiques du vérin, de clarifier son principe de fonctionnement et de déterminer les modalités de raccordement nécessaires à son intégration dans le système.
-
-Cette documentation constitue une base de référence pour les futures utilisations du vérin. Elle permet de conserver les informations collectées et de faciliter les opérations de montage, de raccordement, de mise en service et de maintenance.
-
 
 ### 6. Documentation constructeur
 
