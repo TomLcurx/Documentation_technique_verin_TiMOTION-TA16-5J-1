@@ -153,5 +153,3 @@ L'objectif de ce travail est ainsi d'identifier les caractéristiques du vérin,
 Pour obtenir des informations complémentaires sur les dimensions, la course, la vitesse de déplacement et les possibilités de retour de position, il convient de consulter la documentation technique correspondant à la référence exacte du vérin.
 
 [Consulter la documentation officielle de TiMOTION](https://www.vnmechanics.com/pdf/datasheet_ta16-k_en.pdf)
-
-*Remarque : les caractéristiques présentées ci-dessus reprennent les indications relevées sur l'actionneur. Les paramètres non indiqués, notamment la course, la vitesse et le type de retour de position, restent à confirmer à partir de la documentation constructeur.*\
