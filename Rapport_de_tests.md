@@ -47,7 +47,7 @@ Les différents fils ont été repérés afin de distinguer ceux associés à l'
 
 Les fonctions supposées des conducteurs ont ensuite été utilisées pour réaliser les premiers essais d'alimentation.
 
-Les couleurs des fils, leur emplacement et les fonctions retenues sont présentés dans le fichier de documentation technique `verin-timotion.md`.
+Les couleurs des fils, leur emplacement et les fonctions retenues sont présentés dans le fichier de documentation technique `README.md`.
 
 ## 5. Essais d'alimentation du moteur
 
@@ -147,4 +147,4 @@ Le remplacement du premier vérin par un second exemplaire a permis de poursuivr
 
 La comparaison des résultats a conduit à considérer le premier vérin comme défectueux. Toutefois, la cause exacte de sa panne n'a pas pu être déterminée.
 
-Enfin, les observations recueillies au cours de ces manipulations ont servi de base à la rédaction de la documentation technique `verin-timotion.md`. Les résultats spécifiques au premier vérin doivent être distingués des caractéristiques qui pourront être confirmées sur le vérin de remplacement.
+Enfin, les observations recueillies au cours de ces manipulations ont servi de base à la rédaction de la documentation technique `README.md`. Les résultats spécifiques au premier vérin doivent être distingués des caractéristiques qui pourront être confirmées sur le vérin de remplacement.
